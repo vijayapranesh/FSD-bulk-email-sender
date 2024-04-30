@@ -18,7 +18,7 @@ function App() {
 
     try {
       console.log(emails)
-      const res = await axios.post('http://localhost:4001/send-email', formData, {
+      const res = await axios.post('https://fsd-bulk-email-sender-1.onrender.com/send-email', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
